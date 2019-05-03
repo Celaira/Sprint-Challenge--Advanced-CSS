@@ -1,0 +1,43 @@
+// sign up page
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 0 50px;
+    .flex(row wrap);
+    .labels {
+        width: 50%;
+        .flex(column);
+    label {
+        font-size: 1.75rem;
+        color: @header-font-color;
+        white-space: nowrap;
+    }
+}
+    .inputs {
+        width: 50%;
+        .flex(column);
+        align-items: center;
+    input {
+        width: 100%;
+        border: 2px solid @header-font-color;
+        border-radius: 5px;
+        padding: 1%;
+        margin: 1% 1%;
+    }
+    }
+    .btn {
+        margin-top: 2%;
+        transition: ease-in-out 1s;
+
+        .button(2%, 5px);
+
+        &:hover {
+            background: @footer-background;
+            color: @header-font-color;
+            transition: ease-in-out 1s;
+            border: 2px solid @header-font-color;
+        }
+    }
+}
