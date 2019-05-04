@@ -1,7 +1,7 @@
 // Home Content
 
 .home {
-
+margin-top: 6%;
   .intro {
 
     h2 {
@@ -10,6 +10,9 @@
 
     p {
       padding:0 15px;
+    }
+    img {
+      border-radius: 5px;
     }
   
   }
@@ -24,6 +27,23 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      &.blast {
+        @media @mobile {
+          width: 100%;
+        }
+      }
+
+      &.sky {
+        @media @mobile {
+          display: none;
+        }
+      }
+
+      &.launch {
+        @media @mobile {
+          display: none;
+        }
+      }
     }
   }
 
@@ -46,6 +66,13 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      padding: 50px 10px;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -57,7 +84,27 @@
         margin-bottom: 26px;
       }
 
+      @media @mobile {
+        width: 100%;
+      }
+
       .btn {
+        transition: ease-in-out 1s;
+
+        &:hover {
+          background: @footer-background;
+          color: @header-font-color;
+          transition: ease-in-out 1s;
+          border: 2px solid @header-font-color;
+        }
+
+        .button(2%, 5px);
+
+        @media @mobile {
+          width: 100%;
+          padding: 5%;
+
+        }
       }
     }
 
@@ -65,10 +112,21 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+        order: -1;
+        margin-bottom: 5%;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }

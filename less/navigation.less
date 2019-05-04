@@ -1,1 +1,28 @@
 // Navigation code here
+header {
+    &.top {
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        .flex(column, space-around);
+        text-align: center;
+        background: @nav-bg;
+        opacity: 0.9;
+        border-bottom: 2px dashed @nav-border;
+        h1 {
+            font-size: 3.3rem;
+            margin-bottom: 0;
+        }
+    nav {
+        font-size: 1.5rem;
+        margin: 1% 0;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            margin: 0% 1% 0 1%;
+
+        }
+    }
+}
+}
